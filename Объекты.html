@@ -10,6 +10,30 @@
 <body>
 
 
+<script>
+
+  var person = {
+    name: 'Anatoliy',
+    year: 1976,
+    age: function (){
+      return new Date().getFullYear() - this.year
+    },
+    family: ['Kristina','Ekaterina']
+  }
+
+
+  console.log(person) // object
+  console.log(person.name) // Anatoliy
+  console.log(person['year']) // 1976
+
+  var getFamily = 'family'
+  console.log(person[getFamily]) // array ['Kristina','Ekaterina']
+
+  person.year = 1230
+  console.log(person.year)
+
+</script>
+
 
 </body>
 </html>
