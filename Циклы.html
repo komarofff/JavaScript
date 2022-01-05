@@ -10,17 +10,24 @@
 <body>
 
 <script>
-  var numbers = [1,2,3,4,5]
+    var numbers = [1, 2, 3, 4, 5]
 
-  // for
-  for(let i=0; i<numbers.length; i++){
-    console.log(numbers[i])
-  }
+    // for
+    for (let i = 0; i < numbers.length; i++) {
+        console.log('for ', numbers[i])
+    }
 
-  //forEach
-  numbers.forEach((val,idx)=>{
-    console.log('val=',val)
-  })
+    for (let i in numbers) {
+        console.log('i (for in) = ', i)
+    }
+    for (let i of numbers) {
+        console.log('i (for of) = ', i)
+    }
+
+    //forEach
+    numbers.forEach((val, idx) => {
+        console.log('val (forEach)=', val)
+    })
 
 </script>
 
